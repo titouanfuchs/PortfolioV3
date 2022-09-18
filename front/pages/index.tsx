@@ -33,7 +33,7 @@ const Home: NextPage = () => {
     })
 
     return (
-        <div className="w-full h-full p-2 overflow-x-hidden select-none">
+        <div className="w-full h-full p-2 overflow-x-hidden select-none mainEL" id="mainEL">
             <Head>
                 <title>Portoflio</title>
                 <meta name="description" content="Created with NextJs." />
