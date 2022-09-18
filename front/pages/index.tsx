@@ -2,49 +2,50 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import IntroComponent from '../components/IntroComponent'
-import styles from '../styles/Home.module.css'
 
-import dynamic from "next/dynamic";
-
-const Animator = dynamic(
-    import("react-scroll-motion").then((it) => it.Animator),
-    { ssr: false }
-);
-
-
-import { ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
-import AboutComponent from '../components/AboutComponent'
+import AboutComponent from '../components/AboutComponent';
 import LayoutComponent from '../components/LayoutComponent'
-
-const FadeMove = batch(Fade(), Sticky(), MoveOut(0, -200));
-
+import { useEffect } from 'react';
 
 const Home: NextPage = () => {
-  return (
-    <div className="w-full h-full p-2">
-        <Head>
-            <title>Portoflio</title>
-            <meta name="description" content="Created with NextJs." />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
 
-          <main className="main">
-            <ScrollContainer>
-                <ScrollPage>
-                      <Animator animation={FadeMove}>
-                        <IntroComponent></IntroComponent>
-                    </Animator>
-                </ScrollPage>
-                <ScrollPage>
-                      <Animator animation={FadeMove}>
-                        <AboutComponent></AboutComponent>
-                    </Animator>
-                </ScrollPage>
-            </ScrollContainer>
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            //console.log(entries);
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
 
-        </main>
-    </div>
-  )
+                    for (var i = 0; i < entry.target.children.length; i++) {
+                        var child = entry.target.children[i];
+                        if (child.classList.contains('delay')) {
+                            //Add delay to all childrens with class delay
+                        }
+                    }  
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hid');
+        hiddenElements.forEach((el) => observer.observe(el));
+    })
+
+    return (
+        <div className="w-full h-full p-2">
+            <Head>
+                <title>Portoflio</title>
+                <meta name="description" content="Created with NextJs." />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
+            <main className="main">
+                <IntroComponent></IntroComponent>
+                <AboutComponent></AboutComponent>
+            </main>
+        </div>
+    )
 }
 
 export default Home
