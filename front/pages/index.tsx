@@ -5,6 +5,7 @@ import IntroComponent from '../components/IntroComponent'
 
 import AboutComponent from '../components/AboutComponent';
 import { useEffect } from 'react';
+import ExpComponent from "../components/ExpComponent";
 
 const Home: NextPage = () => {
 
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
             <main className="main space-y-16">
                 <IntroComponent></IntroComponent>
                 <AboutComponent></AboutComponent>
+                <ExpComponent></ExpComponent>
             </main>
         </div>
     )

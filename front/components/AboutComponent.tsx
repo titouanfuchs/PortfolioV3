@@ -15,14 +15,15 @@ const AboutComponent: FC = () => {
                 <Image src="/profil_square.png" alt="Profil" width="275" height="275" className="rounded-full" ></Image>
             </div>
 
-            <div className="childHid delayed">
+            <div className="childHid delayed md:mx-auto w-full md:w-[70rem]">
                 <p className="description">
-                    Je suis Titouan, j{'\''}ai {age} ans.
-                    Ayant découvert le domaine du numérique en étant plus jeune, c'est ce qui m'a orienté aujourd'hui dans le domaine du développement informatique. <br/>
-                    J'ai fondé mes compétences de base en développement lors d'expérimentations sur mon temps libre ainsi que des cours et tutoriels en ligne.<br/>
-                    J'effectue régulièrement une veille technologique en autodidacte à l'aide de petits projets personnels / DIY afin de progresser en compétences.<br/>
+                    Je suis Titouan, j{'\''}ai {age} ans et je suis <span className="font-light italic text-primary">étudiant en développement informatique.</span> <br/>
+                    <br/>
+                    Ayant découvert le domaine du numérique en étant plus jeune, c'est ce qui m'a orienté aujourd'hui dans le domaine du développement informatique.
+                    J'ai fondé mes compétences de base en développement lors d'expérimentations sur mon temps libre ainsi que des cours et tutoriels en ligne.
+                    J'effectue régulièrement une veille technologique en autodidacte à l'aide de petits projets personnels / DIY afin de progresser en compétences. <br/><br/>
 
-                    J'ai pour ambition professionnelle serieuse de concevoir des jeux vidéos.
+                    J'ai pour ambition professionnelle serieuse de <span className="font-light italic text-primary">concevoir des jeux vidéos</span>.
                 </p>
             </div>
         </div>
