@@ -20,6 +20,12 @@ const Experience: FC = () => {
                     Réalisation d'outils numériques (Application mobile, jeux concours, Chatbot).
                 </p>
             </div>
+
+            <div className="md:mx-auto w-full">
+                <p className="text-xl text-center text-emerald-300">
+                    IN PROGRESS...
+                </p>
+            </div>
         </div>
     </>;
 };
