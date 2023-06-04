@@ -11,12 +11,12 @@ const IntroComponent: FC = () => {
             </h1>
 
             <p className="text-4xl childHid text-center text-primary_accent">
-                {'/>'} Developpeur Full-Stack Junior
+                {'/>'} Etudiant développeur informatique
             </p>
 
             <p className="description childHid delayed">
                 &Acirc;g&eacute; de {age} ans, je suis passionn&eacute; par l&#39;informatique et les nouvelles technologies. <br></br>
-                ACtuellement étudiant à l{'\''}UHA 4.0 en deuxième année{'.'}
+                Actuellement étudiant à l{'\''}UHA 4.0 en deuxième année{'.'}
             </p>
         </section>
     </>;

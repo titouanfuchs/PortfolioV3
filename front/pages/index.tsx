@@ -19,6 +19,7 @@ const Home: NextPage = () => {
 
                         if (child.classList.contains('delayed')) {
                             child.classList.remove(`delayed`);
+                            // @ts-ignore
                             child.style.transitionDelay = `${(i) * 250}ms`
                         }
 

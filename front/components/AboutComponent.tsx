@@ -17,9 +17,12 @@ const AboutComponent: FC = () => {
 
             <div className="childHid delayed">
                 <p className="description">
-                    Je suis Titouan Fuchs, j{'\''}ai {age} ans. Depuis toujours, je porte un certain intérêt à l{'\''}informatique, et plus précisément dans la programmation.
-                    Je me suis alors lancé dans le développement de diverses projets, pour apprendre, tester, et créer. <br></br>
-                    Après avoir obtenu mon baccalauréat, j{'\''}ai commencé mes études avec l{'\''}UHA 4.0.
+                    Je suis Titouan, j{'\''}ai {age} ans.
+                    Ayant découvert le domaine du numérique en étant plus jeune, c'est ce qui m'a orienté aujourd'hui dans le domaine du développement informatique. <br/>
+                    J'ai fondé mes compétences de base en développement lors d'expérimentations sur mon temps libre ainsi que des cours et tutoriels en ligne.<br/>
+                    J'effectue régulièrement une veille technologique en autodidacte à l'aide de petits projets personnels / DIY afin de progresser en compétences.<br/>
+
+                    J'ai pour ambition professionnelle serieuse de concevoir des jeux vidéos.
                 </p>
             </div>
         </div>
