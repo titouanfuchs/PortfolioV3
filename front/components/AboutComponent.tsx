@@ -11,7 +11,7 @@ const AboutComponent: FC = () => {
                 {'/>'} A propos
             </h1>
 
-            <div className="w-full flex justify-center childHid delayed hidden md:block">
+            <div className="w-full hidden justify-center childHid delayed md:flex">
                 <Image src="/profil_square.png" alt="Profil" width="275" height="275" className="rounded-full" ></Image>
             </div>
 

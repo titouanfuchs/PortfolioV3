@@ -6,6 +6,7 @@ import IntroComponent from '../components/IntroComponent'
 import AboutComponent from '../components/AboutComponent';
 import { useEffect } from 'react';
 import ExpComponent from "../components/ExpComponent";
+import ProjComponent from "../components/ProjComponent";
 
 const Home: NextPage = () => {
 
@@ -46,6 +47,7 @@ const Home: NextPage = () => {
                 <IntroComponent></IntroComponent>
                 <AboutComponent></AboutComponent>
                 <ExpComponent></ExpComponent>
+                <ProjComponent></ProjComponent>
             </main>
         </div>
     )
