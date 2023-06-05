@@ -12,7 +12,10 @@ const ExpComponent: FC = () => {
                 {'/>'} Experiences
             </h1>
 
-            <Experience></Experience>
+            <div className="flex w-full overflow-y-hidden overflow-x-auto space-x-5">
+                <Experience></Experience>
+                <Experience></Experience>
+            </div>
         </div>
     </>;
 };
