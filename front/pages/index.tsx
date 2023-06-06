@@ -38,8 +38,8 @@ const Home: NextPage = () => {
     return (
         <div className="w-full h-full p-2 overflow-x-hidden select-none mainEL" id="mainEL">
             <Head>
-                <title>Portoflio</title>
-                <meta name="description" content="Created with NextJs." />
+                <title>Titouan Fuchs</title>
+                <meta name="description" content="Portfolio personnel" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
