@@ -1,6 +1,11 @@
 ﻿import { FC } from "react";
+import ProjectData from "../../data/ProjectData";
 
-const Project: FC = () => {
+type ProjectProps = {
+    project: ProjectData
+}
+
+const Project = ({project} : ProjectProps) => {
 
     const age: number = new Date().getFullYear() - 2003;
 
@@ -8,34 +13,39 @@ const Project: FC = () => {
         <div className="childHid delayed relative hover:bg-emerald-900 min-h-[35rem] min-w-full md:min-w-[30rem] md:w-[30rem] flex flex-col border-2 border-primary_accent rounded-lg space-y-3 hid place-content-center content-center overflow-hidden p-5 bg-dark" id="About">
             <div className="flex-none">
                 <h1 className="text-3xl text-center text-primary">
-                    MiniFactory
+                    {project.name}
                 </h1>
                 <h2 className="text-lg text-center">
-                    Personnel, 2023
+                    {project.type}, {project.startDate}
                 </h2>
             </div>
 
             <div className="w-full grow flex-grow grid content-center">
                 <p className="text-xl text-center">
-                    Projet de développement d'un jeu de création d'usine. <br/>
-                    Réalisé sur mon temps libre.
+                    {project.description}
                 </p>
             </div>
 
             <div className="w-full h-20 flex justify-center space-x-10 overflow-y-hidden overflow-x-auto text-xl text-primary p-auto">
-                <p className="my-auto">
-                    UnrealEngine
-                </p>
-
-                <p className="my-auto">
-                    C++
-                </p>
+                {project.technos.map((tech, index) => {
+                    return (<p className="my-auto">
+                                {tech}
+                            </p>);
+                })}
             </div>
 
             <div className="w-full flex-none">
-                <p className="text-xl text-center text-emerald-300 border">
-                    IN PROGRESS
-                </p>
+                {project.inProgress &&
+                    (<p className="text-xl text-center text-emerald-300">
+                        IN PROGRESS
+                    </p>)
+                }
+
+                {!project.inProgress &&
+                    (<p className="text-xl text-center text-yellow-600">
+                        DONE
+                    </p>)
+                }
             </div>
         </div>
     </>;
