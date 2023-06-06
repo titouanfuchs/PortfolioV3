@@ -28,7 +28,7 @@ const Project = ({project} : ProjectProps) => {
 
             <div className="w-full h-20 flex justify-center space-x-10 overflow-y-hidden overflow-x-auto text-xl text-primary p-auto">
                 {project.technos.map((tech, index) => {
-                    return (<p className="my-auto">
+                    return (<p key={`techno_${project.name}_${index}`} className="my-auto">
                                 {tech}
                             </p>);
                 })}

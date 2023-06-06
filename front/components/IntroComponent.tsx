@@ -5,7 +5,7 @@ const IntroComponent: FC = () => {
     const age: number = new Date().getFullYear() - 2003;
 
     return <>
-        <section className="min-h-screen hid grid place-content-center content-center">
+        <section className="min-h-screen hid grid place-content-center content-center" id="Intro">
             <h1 className="text-5xl md:text-8xl text-center">
                 Titouan Fuchs
             </h1>

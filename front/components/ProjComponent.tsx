@@ -38,7 +38,7 @@ const ProjComponent: FC = () => {
 
             <div className="flex overflow-y-hidden overflow-x-auto space-x-5 p-5 p-x-0">
                 {projects.map((project, index) => {
-                    return <Project project={project} />
+                    return <Project key={`proj_${index}`} project={project} />
                 })}
             </div>
         </div>
