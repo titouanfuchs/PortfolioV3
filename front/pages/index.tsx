@@ -1,8 +1,7 @@
 ﻿import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import IntroComponent from '../components/IntroComponent'
 
+import IntroComponent from '../components/IntroComponent'
 import AboutComponent from '../components/AboutComponent';
 import { useEffect } from 'react';
 import ExpComponent from "../components/ExpComponent";
@@ -16,8 +15,8 @@ const Home: NextPage = () => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
 
-                    for (var i = 0; i < entry.target.children.length; i++) {
-                        var child = entry.target.children[i];
+                    for (let i = 0; i < entry.target.children.length; i++) {
+                        let child = entry.target.children[i];
 
                         if (child.classList.contains('delayed')) {
                             child.classList.remove(`delayed`);

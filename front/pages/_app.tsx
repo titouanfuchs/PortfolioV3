@@ -1,8 +1,5 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import LayoutComponent from '../components/LayoutComponent';
-
-import dynamic from "next/dynamic";
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import { useEffect, useState } from 'react';
 import NavButton from "../components/Navigation/NavButton";
 
@@ -28,9 +25,37 @@ function MyApp({ Component, pageProps }: AppProps) {
             </div>
 
             <div className="flex max-h-screen">
-                <div className="hidden md:flex w-[18rem] space-y-5 flex-col border-r border-gray-700 justify-center">
-                    <NavButton key="1" sectionToScroll="Intro"></NavButton>
-                    <NavButton key="2" sectionToScroll="About"></NavButton>
+                <div className="hidden md:flex min-w-[4rem] w-[4rem] space-y-5 flex-col border-r border-gray-700 justify-center">
+                    <NavButton key="1" sectionToScroll="Intro">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full bi bi-house" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                        </svg>
+                    </NavButton>
+                    <NavButton key="2" sectionToScroll="About">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                             className="bi bi-file-person w-full h-full" viewBox="0 0 16 16">
+                            <path
+                                d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                            <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                    </NavButton>
+                    <NavButton key="2" sectionToScroll="Experience">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                             className="bi bi-lightning-charge w-full h-full" viewBox="0 0 16 16">
+                            <path
+                                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"/>
+                        </svg>
+                    </NavButton>
+                    <NavButton key="2" sectionToScroll="Projects">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                             className="bi bi-file-zip w-full h-full" viewBox="0 0 16 16">
+                            <path
+                                d="M6.5 7.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v.938l.4 1.599a1 1 0 0 1-.416 1.074l-.93.62a1 1 0 0 1-1.109 0l-.93-.62a1 1 0 0 1-.415-1.074l.4-1.599V7.5zm2 0h-1v.938a1 1 0 0 1-.03.243l-.4 1.598.93.62.93-.62-.4-1.598a1 1 0 0 1-.03-.243V7.5z"/>
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm5.5-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9v1H8v1h1v1H8v1h1v1H7.5V5h-1V4h1V3h-1V2h1V1z"/>
+                        </svg>
+                    </NavButton>
                 </div>
 
                 <div className="flex-grow">

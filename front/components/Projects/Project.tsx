@@ -7,10 +7,8 @@ type ProjectProps = {
 
 const Project = ({project} : ProjectProps) => {
 
-    const age: number = new Date().getFullYear() - 2003;
-
     return <>
-        <div className="childHid delayed relative hover:bg-emerald-900 min-h-[35rem] min-w-full md:min-w-[30rem] md:w-[30rem] flex flex-col border-2 border-primary_accent rounded-lg space-y-3 hid place-content-center content-center overflow-hidden p-5 bg-dark" id="About">
+        <div className="childHid delayed relative hover:bg-emerald-900 min-h-[35rem] min-w-full md:min-w-[30rem] md:w-[30rem] flex flex-col border-2 border-primary_accent rounded-lg space-y-3 hid place-content-center content-center overflow-hidden p-5 bg-dark" id="Projects">
             <div className="flex-none">
                 <h1 className="text-3xl text-center text-primary">
                     {project.name}
