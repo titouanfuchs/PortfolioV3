@@ -1,9 +1,6 @@
 ﻿import { FC } from "react";
 
 const Experience: FC = () => {
-
-    const age: number = new Date().getFullYear() - 2003;
-
     return <>
         <div className="childHid delayed relative hover:bg-emerald-900 min-h-[35rem] min-w-full md:min-w-[30rem] md:w-[30rem] flex flex-col border-2 border-primary_accent rounded-lg space-y-3 hid place-content-center content-center overflow-hidden p-5 bg-dark" id="About">
             <div className="flex-none">
@@ -23,7 +20,7 @@ const Experience: FC = () => {
             </div>
 
             <div className="w-full flex-none">
-                <p className="text-xl text-center text-emerald-300 border">
+                <p className="text-xl text-center text-emerald-300">
                     IN PROGRESS
                 </p>
             </div>
