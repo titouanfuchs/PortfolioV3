@@ -9,7 +9,7 @@ const ContactComponent: FC = () => {
     return <>
         <div className="min-h-screen min-w-full space-y-10 hid grid  content-center" id="Contact">
             <h1 className="text-5xl text-center text-primary">
-                {'/>'} Me Contatacter
+                {'/>'} Me Contacter
             </h1>
         </div>
     </>;
