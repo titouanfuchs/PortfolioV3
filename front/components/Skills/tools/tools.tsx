@@ -15,10 +15,10 @@ const Tools: FC = () => {
                 </h1>
             </div>
             <div className="flex flex-wrap flex-grow space-x-2 justify-evenly overflow-hidden">
-                <SkillTile title={"Git"} image={"/Skills/frameworks/dotnet.svg"}></SkillTile>
-                <SkillTile title={"Rider"} image={"/Skills/frameworks/nextjs.png"}></SkillTile>
-                <SkillTile title={"Webstorm"} image={"/Skills/frameworks/angular.svg"}></SkillTile>
-                <SkillTile title={"VisualStudio"} image={"/Skills/frameworks/nestjs.svg"}></SkillTile>
+                <SkillTile title={"Git"} image={"/Skills/tools/git.svg"}></SkillTile>
+                <SkillTile title={"Rider"} image={"/Skills/tools/rider.svg"}></SkillTile>
+                <SkillTile title={"Webstorm"} image={"/Skills/tools/webstorm.svg"}></SkillTile>
+                <SkillTile title={"VisualStudio"} image={"/Skills/tools/vsstudio.svg"}></SkillTile>
             </div>
         </div>
     </>;
