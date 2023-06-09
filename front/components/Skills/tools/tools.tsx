@@ -1,8 +1,5 @@
 ﻿import { FC } from "react";
-import ProjectData from "../../../data/ProjectData";
 import SkillTile from "../SkillTile";
-
-
 
 const Tools: FC = () => {
 
