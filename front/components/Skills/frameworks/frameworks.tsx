@@ -7,7 +7,7 @@ import SkillTile from "../SkillTile";
 const Languages: FC = () => {
 
     return <>
-        <div className="relative h-fit min-w-full md:min-w-[55rem] md:w-[55rem] flex flex-col border-2 border-primary_accent rounded-lg overflow-hidden bg-dark p-5 space-y-5">
+        <div className="relative h-fit min-w-full md:min-w-[27rem] md:w-[27rem] flex flex-col border-2 border-primary_accent rounded-lg overflow-hidden bg-dark p-5 space-y-5">
 
             <div className="">
                 <h1 className="text-3xl text-center text-light">

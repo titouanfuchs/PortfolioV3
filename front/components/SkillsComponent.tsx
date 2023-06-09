@@ -1,11 +1,9 @@
 ﻿import { FC } from "react";
-import Image from 'next/image';
-import Experience from "./Experiences/Experience";
-import Project from "./Projects/Project";
-import ProjectData from "../data/ProjectData";
 import Languages from "./Skills/languages/Languages";
 import Frameworks from "./Skills/frameworks/frameworks";
 import GameEngines from "./Skills/game_engines/GameEngines";
+import Oss from "./Skills/oss/oss";
+import Tools from "./Skills/tools/tools";
 
 const SkillsComponent: FC = () => {
 
@@ -19,6 +17,8 @@ const SkillsComponent: FC = () => {
                 <Languages></Languages>
                 <Frameworks></Frameworks>
                 <GameEngines></GameEngines>
+                <Oss></Oss>
+                <Tools></Tools>
             </div>
         </div>
     </>;
