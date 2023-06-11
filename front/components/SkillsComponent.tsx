@@ -13,7 +13,7 @@ const SkillsComponent: FC = () => {
                 {'/>'} Skills
             </h1>
 
-            <div className="flex flex-wrap justify-evenly mx-auto w-full overflow-hidden space-y-5 space-x-2">
+            <div className="flex flex-wrap justify-evenly mx-auto w-full overflow-hidden space-y-5 md:space-x-2">
                 <Languages></Languages>
                 <Frameworks></Frameworks>
                 <Tools></Tools>
