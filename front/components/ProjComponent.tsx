@@ -1,6 +1,4 @@
 ﻿import { FC } from "react";
-import Image from 'next/image';
-import Experience from "./Experiences/Experience";
 import Project from "./Projects/Project";
 import ProjectData from "../data/ProjectData";
 

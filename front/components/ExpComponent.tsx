@@ -1,5 +1,4 @@
 ﻿import { FC } from "react";
-import Image from 'next/image';
 import Experience from "./Experiences/Experience";
 
 const ExpComponent: FC = () => {
