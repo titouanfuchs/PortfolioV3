@@ -7,8 +7,9 @@ const ProjComponent: FC = () => {
     const age: number = new Date().getFullYear() - 2003;
 
     const projects : ProjectData[] = [
-        new ProjectData("Jeu Concours TraceXFav 2023", "Jeu concours réalisé à l'occasion de la Foire Aux Vins de Colmar 2023 afin de faire remporter des places de concert aux participants", "Professionnel", "2023", "-", ["UnityEngine", "ASP.Net WepAPI", "PostgresSQL", "Docker"], true),
-        new ProjectData("MiniFactory", "Développement d'un jeu de création d'usine.", "Personnel", "2023", "-", ["UnrealEngine", "C++"], true),
+        new ProjectData("LittleJourney", "Développement \"Survival\" insipiré d'animal crossing. ", "Personnel", "2023", "-", ["UnrealEngine", "C++", "Blender", "Substance 3D Painter"], true),
+        new ProjectData("Jeu Concours TraceXFav 2023", "Jeu concours réalisé à l'occasion de la Foire Aux Vins de Colmar 2023 afin de faire remporter des places de concert aux participants", "Professionnel", "2023", "-", ["UnityEngine", "ASP.Net WepAPI", "PostgresSQL", "Docker"], false),
+        new ProjectData("MiniFactory", "Développement d'un jeu de création d'usine.", "Personnel", "2023", "-", ["UnrealEngine", "C++"], false),
         new ProjectData("Projet Tabletop", "Développement d'un jeu indépendant type JDR/RPG dans un univers Médiéval Fantastique avec une esthétique de jeu de plateau.", "OuterGames", "2023", "-", ["UnrealEngine", "C++"], true),
         new ProjectData("Portfolio", "Développement et hébergement de mon propre portfolio.", "Personnel", "2023", "-", ["NextJs", "TailwindCss"], true),
         new ProjectData("Corderie", "Logiciel de planification et d'estimation de temps de production pour une corderie.", "UHA 4.0.2", "2023", "-", ["Springboot", "Java", "PostgresSQL"], false),
