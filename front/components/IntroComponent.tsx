@@ -15,8 +15,13 @@ const IntroComponent: FC = () => {
             </p>
 
             <p className="description childHid delayed md:mx-auto w-full md:w-[70rem]">
-                &Acirc;g&eacute; de {age} ans, je suis passionn&eacute; par l&#39;informatique et les nouvelles technologies. <br></br>
-                Actuellement étudiant à l{'\''}UHA 4.0 en deuxième année{'.'}
+                &Acirc;g&eacute; de {age} ans, je suis passionn&eacute; par l&#39;informatique et les nouvelles
+                technologies. <br></br>
+                Actuellement étudiant à l{'\''}UHA 4.0 en dernière année{'.'}
+            </p>
+
+            <p className="description  childHid delayed text-center text-primary_accent">
+                !! A la recherhce d'un emplois de développeur pour la mi-septembre{'.'} !!
             </p>
         </section>
     </>;

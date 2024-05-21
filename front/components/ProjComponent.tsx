@@ -7,7 +7,9 @@ const ProjComponent: FC = () => {
     const age: number = new Date().getFullYear() - 2003;
 
     const projects : ProjectData[] = [
-        new ProjectData("LittleJourney", "Développement \"Survival\" insipiré d'animal crossing. ", "Personnel", "2023", "-", ["UnrealEngine", "C++", "Blender", "Substance 3D Painter"], true),
+        new ProjectData("Algorithme d'estimation de chiffre d'affaire", "Logiciel permettant d'estimer un chiffre d'affaire en fonction de paramètres et de données basées sur une année précédente", "Professionnel", "2024", "-", [".Net", "Rust","GTK", "SQLite"], true),
+        new ProjectData("Infused", "Projet de jeu de gestion de tavern dans un univers médiéval fantastique", "Personnel", "2023", "-", ["UnrealEngine", "C++", "Blender", "Substance 3D Painter"], true),
+        new ProjectData("LittleJourney", "Développement \"Survival\" insipiré d'animal crossing. ", "Personnel", "2023", "-", ["UnrealEngine", "C++", "Blender", "Substance 3D Painter"], false),
         new ProjectData("Jeu Concours TraceXFav 2023", "Jeu concours réalisé à l'occasion de la Foire Aux Vins de Colmar 2023 afin de faire remporter des places de concert aux participants", "Professionnel", "2023", "-", ["UnityEngine", "ASP.Net WepAPI", "PostgresSQL", "Docker"], false),
         new ProjectData("MiniFactory", "Développement d'un jeu de création d'usine.", "Personnel", "2023", "-", ["UnrealEngine", "C++"], false),
         new ProjectData("Projet Tabletop", "Développement d'un jeu indépendant type JDR/RPG dans un univers Médiéval Fantastique avec une esthétique de jeu de plateau.", "OuterGames", "2023", "-", ["UnrealEngine", "C++"], true),
