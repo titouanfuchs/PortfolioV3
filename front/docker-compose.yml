@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:  
+  tfuchs-portfolio:
+    container_name: portfolio-v3
+    build:
+      dockerfile: Dockerfile
+      context: ./
+      target: ${TARGET}
+    restart: on-failure
+    volumes:
+      - ./:/app
+      - portfolio-front-next:/app/.next
+      - portfolio-front-modules:/app/node_modules
+    ports:
+      - ${PORT_FRONT}:3000
+
+
+volumes:
+  portfolio-front-next:
+  portfolio-front-modules:

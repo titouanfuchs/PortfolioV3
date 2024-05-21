@@ -1,0 +1,25 @@
+FROM node:alpine as base
+WORKDIR /app
+EXPOSE 3000
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install
+
+FROM base as build
+WORKDIR /app
+
+COPY . .
+
+RUN yarn run build
+
+FROM base as prod
+WORKDIR /app
+
+COPY --from=build /app/.next .next/
+
+ENTRYPOINT ["yarn", "start"]
+
+FROM base as dev
+WORKDIR /app
+
+ENTRYPOINT ["yarn", "dev"]
