@@ -7,6 +7,10 @@ services:
       dockerfile: Dockerfile
       context: ./
       target: ${TARGET}
+    environment:
+      VIRTUAL_HOST: ${VHOST}
+      LETSENCRYPT_HOST: ${VHOST}
+      VIRTUAL_PORT: 3000
     restart: on-failure
     volumes:
       - ./:/app
@@ -14,8 +18,14 @@ services:
       - portfolio-front-modules:/app/node_modules
     ports:
       - ${PORT_FRONT}:3000
+    networks:
+      - net
 
 
 volumes:
   portfolio-front-next:
   portfolio-front-modules:
+    
+networks:
+  net:
+    external: true
