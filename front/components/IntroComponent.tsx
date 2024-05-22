@@ -4,6 +4,19 @@ const IntroComponent: FC = () => {
 
     const age: number = new Date().getFullYear() - 2003;
 
+    function scrollToContact(){
+        const element = document.getElementById("Contact");
+
+        if (!element) return;
+
+        element.classList.remove(`hid`);
+        element.classList.add('show');
+
+        element.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+    
     return <>
         <section className="min-h-screen hid grid place-content-center content-center" id="Intro">
             <h1 className="text-5xl md:text-8xl text-center">
@@ -20,8 +33,8 @@ const IntroComponent: FC = () => {
                 Actuellement étudiant à l{'\''}UHA 4.0 en dernière année{'.'}
             </p>
 
-            <p className="description  childHid delayed text-center text-primary_accent">
-                !! A la recherhce d'un emplois de développeur pour la mi-septembre{'.'} !!
+            <p onClick={scrollToContact} className="description  childHid delayed text-center text-primary_accent cursor-pointer border-2 border-primary_accent p-2">
+                !! A la recherhce d'un emploi de développeur pour la mi-septembre{'.'} !!
             </p>
         </section>
     </>;
