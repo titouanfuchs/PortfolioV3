@@ -34,7 +34,7 @@ const IntroComponent: FC = () => {
             </p>
 
             <p onClick={scrollToContact} className="description  childHid delayed text-center text-primary_accent cursor-pointer border-2 border-primary_accent p-2">
-                !! A la recherhce d'un emploi de développeur pour la mi-septembre{'.'} !!
+                !! A la recherche d'un emploi de développeur pour la mi-septembre{'.'} !!
             </p>
         </section>
     </>;
