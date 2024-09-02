@@ -24,17 +24,12 @@ const IntroComponent: FC = () => {
             </h1>
 
             <p className="text-2xl md:text-4xl childHid text-center text-primary_accent">
-                {'/>'} Etudiant développeur informatique
+                {'/>'} Développeur Full-Stack et Game developer
             </p>
 
             <p className="description childHid delayed md:mx-auto w-full md:w-[70rem]">
                 &Acirc;g&eacute; de {age} ans, je suis passionn&eacute; par l&#39;informatique et les nouvelles
                 technologies. <br></br>
-                Actuellement étudiant à l{'\''}UHA 4.0 en dernière année{'.'}
-            </p>
-
-            <p onClick={scrollToContact} className="description  childHid delayed text-center text-primary_accent cursor-pointer border-2 border-primary_accent p-2">
-                !! A la recherche d'un emploi de développeur pour la mi-septembre{'.'} !!
             </p>
         </section>
     </>;

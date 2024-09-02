@@ -20,8 +20,8 @@ const Experience: FC = () => {
             </div>
 
             <div className="w-full flex-none">
-                <p className="text-xl text-center text-emerald-300">
-                    IN PROGRESS
+                <p className="text-xl text-center text-yellow-600">
+                    DONE
                 </p>
             </div>
         </div>
