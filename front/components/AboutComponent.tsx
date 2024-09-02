@@ -21,7 +21,7 @@ const AboutComponent: FC = () => {
 
             <div className="childHid delayed md:mx-auto w-full md:w-[70rem]">
                 <p className="description">
-                    Je suis Titouan, j{'\''}ai {age} ans et je suis <span className="font-light italic text-primary">étudiant en développement informatique.</span> <br/>
+                    Je suis Titouan, j{'\''}ai {age} ans.
                     <br/>
                     Ayant découvert le domaine du numérique en étant plus jeune, c'est ce qui m'a orienté aujourd'hui dans le domaine du développement informatique.
                     J'ai fondé mes compétences de base en développement lors d'expérimentations sur mon temps libre ainsi que des cours et tutoriels en ligne.
